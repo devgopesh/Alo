@@ -1,0 +1,415 @@
+body , html{
+	background-color: pink;
+	overflow: hidden;
+	font-family: 'sans-sarif';
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+li {
+	list-style-type: none;
+}
+
+.cover li {
+	height: 40px;
+}
+
+.cover {
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	margin-top: -100px;
+}
+
+.cover p {
+	position: relative;
+	right: -90px;
+	top: -60px;
+	transition: 0.2s;
+}
+
+.cover1 {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	margin-top: -115px;
+	z-index: 1;
+}
+
+.popout {
+	position: absolute;
+	margin-left: 80px;
+	margin-top: -40px;
+}
+
+.popout1 {
+	position: absolute;
+	margin-left: 80px;
+	margin-top: -40px;
+}
+
+img {
+	margin-left: 27%;
+	margin-top: 20px;
+}
+
+.animalinfo {
+	text-align: center;
+}
+
+.animalinfo li:nth-child(1) {
+	letter-spacing: .1em;
+	margin-right: 32px;
+	opacity: 0.77;
+	color: #fff;
+}
+
+.animalinfo li {
+	margin-top: 0;
+	position: relative;
+	height: 34px;
+	display: inline-block;
+}
+
+.animalinfo li:nth-child(1)::before {
+	content: "";
+	position: absolute;
+	right: -16px;
+	top: 0;
+	height: 100%;
+	width: 3px;
+	border-radius: 10px;
+	background-color: #486461;
+}
+
+.animalinfo li:nth-child(1) span {
+	display: block;
+}
+
+.okapi {
+	margin-top: -4px;
+	font-size: 3em;
+	line-height: 1em;
+	color: #fff;
+	letter-spacing: .05em;
+}
+
+.li3 ,.wallpaper {
+	background: url('http://species-in-pieces.com/img/textured-ui/green-texture-circle.png') center center repeat; 
+	background-size: cover;
+}
+
+.animalinfo li:nth-child(3) a {
+	height: 44px;
+	width: 44px;
+	display: inline-block;
+	float: left;
+	margin-top: -5px;
+	position: relative;
+	margin-left: 5px;
+}
+
+.animalinfo li:nth-child(3) .stats {
+	border-color: #E794AE;
+}
+
+.stats {
+	position: absolute;
+	top: 55%;
+	left: 54%;
+	height: 15px;
+	width: 15px;
+	margin: -10px 0 0 -9px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+}
+
+.stats::before {
+	content: "";
+	position: absolute;
+	top: 45%;
+	left: 20%;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-left: 10px solid #e794ae;
+	transform: rotate(-120deg);
+}
+
+.animalinfo li:nth-child(3) a.wallpaper span {
+	z-index: 99;
+	height: 13px;
+	width: 13px;
+	margin-top: -8px;
+	position: absolute;
+	top: 55%;
+	left: 54%;
+	border: 2px solid #e794ae;
+	border-radius: 4px;
+	margin-left: -8px;
+}
+
+.animalinfo li:nth-child(3) a.wallpaper span::before {
+	content: "";
+	height: 2px;
+	width: 11px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	border-radius: 3px;
+	transform: rotate(-45deg) translateX(-8px) translateY(0px);
+	background: #e794ae;
+}
+
+footer {
+	position: absolute;
+	bottom: 35px;
+	width: 100%;
+	z-index: 999999;
+}
+
+footer ul {
+	text-align: center;
+	top: 0;
+	position: relative;
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	display: inline-block;
+	font-size: 0.8em;
+	margin: 0 15px;
+	position: relative;
+	padding: 0;
+	transform: translateY(0);
+}
+
+
+
+.link {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	color: #fff;
+	font-weight: bold;
+}
+
+footer ul .l::after {
+	content: "";
+	position: absolute;
+	right: -15px;
+	top: 0;
+	height: 100%;
+	width: 3px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+footer ul li .share {
+	padding-left: 34px;
+	background: url('http://species-in-pieces.com/img/textured-ui/social.png') left center no-repeat;
+	background-size: 23px 15px;
+}
+
+.by {
+	color: #e794ae;
+}
+
+cover1 .circle {
+	left: 50%;
+	margin-left: -27px;
+}
+
+.circle {
+	height: 54px;
+	width: 54px;
+	border-radius: 100px;
+	position: relative;
+	margin-bottom: 10px;
+	border: 3px solid green;
+	margin: 20px 20px 0px 20px;
+}
+
+.circle p {
+	position: absolute;
+	right: 60px;
+	top: -10px;
+}
+
+.circle .arrow {
+	z-index: 99;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -7px;
+	margin-top: -5px;
+}
+
+.circle .arrow::before {
+	transform: rotate(45deg);
+	content: "";
+	position: absolute;width: 15px;
+	height: 7px;
+	border-radius: 2px;
+	background-image: url('http://species-in-pieces.com/img/textured-ui/repeat-white.png');
+	background-size: 30px 30px;
+	transform-origin: 50% 100%;
+}
+
+.circle .arrow::after {
+	transform: rotate(-45deg);
+	content: "";
+	position: absolute;width: 15px;
+	height: 7px;
+	border-radius: 2px;
+	background-image: url('http://species-in-pieces.com/img/textured-ui/repeat-white.png');
+	background-size: 30px 30px;
+	transform-origin: 50% 100%;
+}
+
+.next {
+	margin-top: -10px;
+}
+
+.next div .arrow {
+	transform: translateX(-6px);
+}
+
+.next div .arrow::before {
+	transform: rotate(-45deg) translateX(8px) translateY(8px);
+}
+
+.next div .arrow::after {
+	transform: rotate(45deg);
+}
+
+.cover1 .who {
+	display: block;
+	margin: 10px 0;
+	height: 100px;
+	width: 100px;
+	background: url('http://species-in-pieces.com/img/textured-ui/threat.png') center center no-repeat;
+	background-size: cover;
+}
+
+.cover1 .who::before {
+	display: inline-block;height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+
+.who span {
+	text-align: center;
+	letter-spacing: 0.1em;
+	line-height: 1em;
+	z-index: 2;
+	width: 84%;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding-left: 6%;
+	color: #e794ae;
+	top: 25px;
+}
+
+.who span span {
+	display: block;
+	font-weight: bold;
+	top: 4px;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 20px solid #fff;
+	border-bottom: 5px solid transparent;
+	transform: rotate(-60deg);
+	margin: 15px 0 0 15px;
+}
+
+.arrow {
+	z-index: 99;
+	position: absolute;
+	margin-left: -7px;
+	margin-top: -5px;
+}
+
+.arc div {
+    border: 2px solid #fff;
+    display: inline-block;
+    min-width: 1em;
+    min-height: 1em;
+    padding: 0.4em;
+    border-radius: 50%;
+    border-left-color: transparent;
+  	border-bottom-color: transparent;
+  	border-top-color: transparent;
+  	margin: 3px 0 0 0;
+}
+
+.cover > li:nth-child(2) div .arrow {
+	transform: scale(0.45) rotate(-45deg);
+	left: 27px;
+}
+
+.cover > li:nth-child(2) div .arrow::before {
+	left: 1px;
+}
+
+.cover > li:nth-child(2) div .arrow::before, .cover > li:nth-child(2) div .arrow::after {
+	width: 17px;height: 6px;
+	top: 2px;
+}
+
+.cover > li:nth-child(2) div .arrow div::before, .cover > li:nth-child(2) div .arrow div::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 23px;
+	background-image: url('http://species-in-pieces.com/img/textured-ui/repeat-white.png');
+	background-size: 30px 70px;
+	border-radius: 2px;
+	top: 6px;
+	left: 4px;
+}
+
+.cover > li:nth-child(2) div .arrow div::after {
+	transform: rotate(90deg);
+	left: -1px;
+	top: 20px;
+	height: 15px;
+}
+
+.cover > li:nth-child(2) div .arrow::after {
+	left: -3px;
+}
+
+.cover > li:nth-child(2) div .arrow:nth-child(2) {
+	left: 33px;
+	top: 37px;
+	transform: scale(0.45) rotate(135deg);
+}
+
+.circle:hover{
+	border: 4px solid green;
+	cursor: pointer;
+	-ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+.who:hover {
+	cursor: pointer;
+	-ms-transform: scale(1.07); 
+    -webkit-transform: scale(1.07);
+	transform: scale(1.07);
+}
+
+footer li p .w3-button:hover {
+	background-color: #fff !important;
+}
+
+
